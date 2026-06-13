@@ -10,7 +10,15 @@
 <div id="stars"></div>
 <div id="petals"></div>
 
-<div class="page active" id="p1"><h1>Aalam ❤️ Gursanjh</h1><p>Every love story is beautiful, but ours is my favorite.</p><button onclick="go(2)">Begin Journey</button></div>
+<div class="page active" id="p1"><h1>Aalam ❤️ Gursanjh</h1><p>Every love story is beautiful, but ours is my favorite.</p><div class="music-container">
+    <button id="musicBtn" onclick="toggleMusic()">
+        🎵 Our Song
+    </button>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="music/until-i-found-you.mp3" type="audio/mpeg">
+</audio><button onclick="go(2)">Begin Journey</button></div>
 <div class="page" id="p2"><h2>Our Story</h2><p class="type">03 Nov 2025 — The day our story began.</p><button onclick="go(3)">Continue</button></div>
 <div class="page" id="p3"><h2>Together Since</h2><div id="counter"></div><button onclick="go(4)">Continue</button></div>
 <div class="page" id="p4"><h2>Reasons I Love You</h2><div id="reasonCard"></div><button onclick="nextReason()">Next</button><button onclick="go(5)">Continue</button></div>

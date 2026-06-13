@@ -28,3 +28,17 @@ function explode(){
 for(let i=0;i<50;i++){let b=document.createElement("div");b.className="boom";b.innerHTML="❤️";
 b.style.left=(50+Math.random()*20-10)+"vw";b.style.top=(50+Math.random()*20-10)+"vh";document.body.appendChild(b);}
 }
+function toggleMusic() {
+    const music = document.getElementById("bgMusic");
+    const btn = document.getElementById("musicBtn");
+
+    if (music.paused) {
+        music.play();
+        btn.innerHTML = "🎶 Playing Our Song";
+        btn.classList.add("playing");
+    } else {
+        music.pause();
+        btn.innerHTML = "🎵 Our Song";
+        btn.classList.remove("playing");
+    }
+}

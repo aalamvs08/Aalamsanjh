@@ -12,12 +12,12 @@ counter.textContent=d+" Days Together ❤️";
 }
 setInterval(tick,1000);tick();
 
-for(let i=0;i<120;i++){
+for(let i=0;i<90;i++){
 let s=document.createElement("div");s.className="star";s.innerHTML="✦";
 s.style.left=Math.random()*100+"vw";s.style.top=Math.random()*100+"vh";
 document.getElementById("stars").appendChild(s);
 }
-for(let i=0;i<30;i++){
+for(let i=0;i<10;i++){
 let p=document.createElement("div");p.className="petal";p.innerHTML="🌹";
 p.style.left=Math.random()*100+"vw";p.style.top=Math.random()*100+"vh";
 document.getElementById("petals").appendChild(p);
@@ -25,7 +25,7 @@ document.getElementById("petals").appendChild(p);
 let taps=0;
 document.addEventListener("click",()=>{taps++; if(taps===5) alert("Secret: I choose you in every universe ❤️");});
 function explode(){
-for(let i=0;i<50;i++){let b=document.createElement("div");b.className="boom";b.innerHTML="❤️";
+for(let i=0;i<15;i++){let b=document.createElement("div");b.className="boom";b.innerHTML="❤️";
 b.style.left=(50+Math.random()*20-10)+"vw";b.style.top=(50+Math.random()*20-10)+"vh";document.body.appendChild(b);}
 }
 function toggleMusic() {
